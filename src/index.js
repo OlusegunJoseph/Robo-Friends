@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "tachyons";
-import Card from "./Card";
+import CardList from "./CardList";
 import { robots } from "./robots";
 import reportWebVitals from "./reportWebVitals";
 
@@ -16,9 +16,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Card name={robots[0].name} email={robots[0].email} id={robots[0].id} />
-    <Card name={robots[1].name} email={robots[1].email} id={robots[1].id} />
-    <Card name={robots[2].name} email={robots[2].email} id={robots[2].id} />
+    <CardList robots={robots} />
   </React.StrictMode>
 );
 
